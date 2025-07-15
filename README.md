@@ -1,68 +1,71 @@
-📝 TODO List Application
-A sleek and responsive TODO List web application built with React and Vite. This app allows users to easily manage their tasks — add, complete, and delete them with a simple user interface.
+# 📝 TODO List Application
 
-🔗 Live Demo
+A sleek and responsive TODO List web application built with **React** and **Vite**. This app allows users to easily manage their tasks — add, complete, and delete them with a simple user interface.
 
-🚀 Features
-✅ Add new tasks
+🔗 **[Live Demo](https://todo-list-front-end-project-utdi.vercel.app/)**
 
-🗑️ Delete existing tasks
+---
 
-✏️ Mark tasks as completed
+## 🚀 Features
 
-💾 Local storage support (tasks persist on page reload)
+- ✅ Add new tasks  
+- 🗑️ Delete existing tasks  
+- ✏️ Mark tasks as completed  
+- 💾 Local storage support (tasks persist on page reload)  
+- ⚡ Fast development experience using Vite  
+- 🎨 Clean and minimal user interface  
 
-⚡ Fast development experience using Vite
+---
 
-🎨 Clean and minimal user interface
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
-Frontend: React, JavaScript, HTML, CSS
+- **Frontend**: React, JavaScript, HTML, CSS  
+- **Build Tool**: Vite  
+- **Linting**: ESLint  
 
-Build Tool: Vite
+---
 
-Linting: ESLint
+## 📁 Folder Structure
 
-📁 Folder Structure
-php
-Copy
-Edit
 TODO-LIST/
 └── todo-list/
-    ├── public/              # Static assets (if any)
-    ├── src/
-    │   ├── components/
-    │   │   ├── todo.css
-    │   │   └── todo.jsx
-    │   ├── App.jsx          # Root component
-    │   ├── App.css
-    │   ├── index.css
-    │   └── main.jsx         # React entry point
-    ├── index.html           # HTML template
-    ├── package.json         # Project metadata and dependencies
-    ├── vite.config.js       # Vite configuration
-    └── .gitignore           # Git ignore rules
-📦 Installation
+├── public/ # Static assets (if any)
+├── src/
+│ ├── components/
+│ │ ├── todo.css
+│ │ └── todo.jsx
+│ ├── App.jsx # Root component
+│ ├── App.css
+│ ├── index.css
+│ └── main.jsx # React entry point
+├── index.html # HTML template
+├── package.json # Project metadata and dependencies
+├── vite.config.js # Vite configuration
+└── .gitignore # Git ignore rules
+
+yaml
+Copy code
+
+---
+
+## 📦 Installation
+
 To run the project locally, follow these steps:
 
-Clone the repository:
+1. **Clone the repository**:
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/todo-list.git
-cd todo-list/todo-list
+   ```bash
+   git clone https://github.com/your-username/todo-list.git
+   cd todo-list/todo-list
 Install dependencies:
 
 bash
-Copy
-Edit
+Copy code
 npm install
 Start the development server:
 
 bash
-Copy
-Edit
+Copy code
 npm run dev
 Open in browser:
 Visit http://localhost:5173 in your browser.
@@ -71,8 +74,7 @@ Visit http://localhost:5173 in your browser.
 To lint your code with ESLint:
 
 bash
-Copy
-Edit
+Copy code
 npm run lint
 📄 License
 This project is licensed under the MIT License.
