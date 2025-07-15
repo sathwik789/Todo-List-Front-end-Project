@@ -1,12 +1,77 @@
-# React + Vite
+# 📝 TODO List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and responsive TODO List web application built with **React** and **Vite**. This app allows users to easily manage their tasks — add, complete, and delete them with a simple user interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Add new tasks
+- 🗑️ Delete existing tasks
+- ✏️ Mark tasks as completed
+- 💾 Local storage support (tasks persist on page reload)
+- ⚡ Fast development experience using Vite
+- 🎨 Clean and minimal user interface
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React, JavaScript, HTML, CSS
+- **Build Tool**: Vite
+- **Linting**: ESLint
+
+## 📁 Folder Structure
+
+TODO-LIST/
+└── todo-list/
+├── public/ # Static assets (if any)
+├── src/
+│ ├── components/
+      | ├── todo.css
+      | ├── todo.jsx
+│ ├── App.jsx # Root component
+│ ├── App.css
+│ ├── index.css
+│ ├── main.jsx # React entry point
+├── index.html # HTML template
+├── package.json # Project metadata and dependencies
+├── vite.config.js # Vite configuration
+└── .gitignore # Files to be ignored by Git
+
+bash
+Copy
+Edit
+
+## 📦 Installation
+
+To run the project locally, follow these steps:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/your-username/todo-list.git
+   cd todo-list/todo-list
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Start the development server:
+
+bash
+Copy
+Edit
+npm run dev
+Open in browser:
+
+Visit http://localhost:5173/ in your browser.
+
+🧪 Linting
+To lint your code with ESLint:
+
+bash
+Copy
+Edit
+npm run lint
+📄 License
+This project is licensed under the MIT License.
+
+👤 Author - sathwik789
