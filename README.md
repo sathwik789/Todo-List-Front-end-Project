@@ -43,10 +43,6 @@ TODO-LIST/
 ├── vite.config.js # Vite configuration
 └── .gitignore # Git ignore rules
 
-yaml
-Copy code
-
----
 
 ## 📦 Installation
 
