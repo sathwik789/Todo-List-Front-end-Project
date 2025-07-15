@@ -1,10 +1,24 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const Todo1 = () => {
   const [items, setItems] = useState([]);
   const [filter, setFilter] = useState("all");
   const [completedItems, setCompletedItems] = useState(new Set());
   const inputRef = useRef(null);
+
+  // ✅ Load from localStorage on mount
+  useEffect(() => {
+    const savedItems = JSON.parse(localStorage.getItem("todos")) || [];
+    const savedCompleted = new Set(JSON.parse(localStorage.getItem("completedTodos")) || []);
+    setItems(savedItems);
+    setCompletedItems(savedCompleted);
+  }, []);
+
+  // ✅ Save to localStorage whenever items or completedItems change
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(items));
+    localStorage.setItem("completedTodos", JSON.stringify([...completedItems]));
+  }, [items, completedItems]);
 
   function addtodo() {
     const todoText = inputRef.current.value.trim();
@@ -61,9 +75,7 @@ const Todo1 = () => {
       <div className="max-w-md mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">
-            Todo List
-          </h1>
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">Todo List</h1>
           <p className="text-gray-600">Stay organized and productive</p>
         </div>
 
@@ -109,7 +121,7 @@ const Todo1 = () => {
                 </button>
               )}
             </div>
-            
+
             <div className="flex gap-2">
               {["all", "active", "completed"].map(filterType => (
                 <button
