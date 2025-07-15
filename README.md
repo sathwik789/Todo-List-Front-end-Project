@@ -43,27 +43,29 @@ TODO-LIST/
 ├── vite.config.js # Vite configuration
 └── .gitignore # Git ignore rules
 
+yaml
+Copy code
+
+---
 
 ## 📦 Installation
 
 To run the project locally, follow these steps:
 
-1. **Clone the repository**:
+### 1. Clone the repository
 
-   ```bash
-   git clone https://github.com/your-username/todo-list.git
-   cd todo-list/todo-list
-Install dependencies:
-
+```bash
+git clone https://github.com/your-username/todo-list.git
+cd todo-list/todo-list
+2. Install dependencies
 bash
 Copy code
 npm install
-Start the development server:
-
+3. Start the development server
 bash
 Copy code
 npm run dev
-Open in browser:
+4. Open in browser
 Visit http://localhost:5173 in your browser.
 
 🧪 Linting
