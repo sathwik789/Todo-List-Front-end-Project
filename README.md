@@ -23,7 +23,7 @@ A sleek and responsive TODO List web application built with **React** and **Vite
 - **Build Tool**: Vite  
 - **Linting**: ESLint  
 
----
+
 
 ## 📁 Folder Structure
 
@@ -43,10 +43,7 @@ TODO-LIST/
 ├── vite.config.js # Vite configuration
 └── .gitignore # Git ignore rules
 
-yaml
-Copy code
 
----
 
 ## 📦 Installation
 
